@@ -1,3 +1,8 @@
+{% extends "booking/base.html" %}
+
+
+
+{% block content %}
 <h2>Room {{ room.room_number }} - {{ room.room_type }}</h2>
 <p>Price: ${{ room.price_per_night }}</p>
 <p>Status: {% if room.is_available %}Available{% else %}Booked{% endif %}</p>
@@ -6,3 +11,5 @@
   <a href="{% url 'book_room' room.id %}">Book Now</a>
 {% endif %}
 <a href="{% url 'room_list' %}">Back to List</a>
+
+{% endblock content %}
