@@ -8,9 +8,21 @@ This is a simple hotel booking system built using Django that allows users to:
 - View both available and unavailable rooms on the homepage
 - Manage rooms and bookings via the Django admin panel
 
+
+Features Implemented
+- List all available hotel rooms on the homepage  
+- View details of a single room  
+- Book a room with customer info and booking dates  
+- Mark rooms as unavailable after booking  
+- Display unavailable rooms below available rooms on the homepage  
+- Admin panel for managing rooms and bookings  
+- Basic HTML templates with Django templating  
+- Form validation including date fields with date picker inputs
+  
+
 Project Structure
-Project Name:** `hotel_booking_project`  
-App Name:** `booking`
+Project Name: `hotel_booking_project`  
+App Name: `booking`
 
 
 Setup Instructions
