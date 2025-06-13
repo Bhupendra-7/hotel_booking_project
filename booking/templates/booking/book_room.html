@@ -1,0 +1,7 @@
+<h2>Book Room {{ room.room_number }}</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Confirm Booking</button>
+</form>
+<a href="{% url 'room_detail' room.id %}">Cancel</a>
